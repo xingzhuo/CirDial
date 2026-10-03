@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Architecture": "ARM64",
+    "Kind": "user",
+    "File": "usbip.exe",
+    "SHA256": "90663093D9E13795E567536328EC960D2AB5275F6342C5D3342CDF13E397E579"
+  },
+  {
+    "Architecture": "ARM64",
+    "Kind": "user",
+    "File": "libusbip.dll",
+    "SHA256": "593AE7551B53FF34E8EB6FA25CF8E00523606A9F9F8129F83C8EB94195A44F0B"
+  },
+  {
+    "Architecture": "ARM64",
+    "Kind": "user",
+    "File": "resources.dll",
+    "SHA256": "B9FF5A60212F7BDED02A16510EEE031C59C312A4A396AC2956478E6A32165928"
+  },
+  {
+    "Architecture": "ARM64",
+    "Kind": "driver",
+    "File": "usbip2_ude.sys",
+    "SHA256": "38C64546938EA99B6C3EC69F3E5169AD79AFC47A59FACEB51CFB35D038E249A2"
+  },
+  {
+    "Architecture": "ARM64",
+    "Kind": "driver",
+    "File": "usbip2_filter.sys",
+    "SHA256": "29734C76F96A33DCFDFBAF633997DEB8AF98DF5B8F5C11195E5AC955F0A97399"
+  },
+  {
+    "Architecture": "x64",
+    "Kind": "user",
+    "File": "usbip.exe",
+    "SHA256": "817DA219FA153B4B37C3BC1AA8FCC63F33E046188C57CC3DD2C60A6EF0883C56"
+  },
+  {
+    "Architecture": "x64",
+    "Kind": "user",
+    "File": "libusbip.dll",
+    "SHA256": "F123EF5D288B817A890CBE39A3C2D212B3D8B1765C691C8703CCB76C7337986C"
+  },
+  {
+    "Architecture": "x64",
+    "Kind": "user",
+    "File": "resources.dll",
+    "SHA256": "4BFC862E5891D9B4C12A8EBD43D3BA871EBF94B65F7A00C22527C905949E0FFF"
+  },
+  {
+    "Architecture": "x64",
+    "Kind": "driver",
+    "File": "usbip2_ude.sys",
+    "SHA256": "ABD4FC43DCE40E027E4ACC884CBFE92433E026206F6565C5EE5284A39441169A"
+  },
+  {
+    "Architecture": "x64",
+    "Kind": "driver",
+    "File": "usbip2_filter.sys",
+    "SHA256": "B93A5FC3C23D56F9B49634742374E32F269E53F764CAA2D5FCB43E3259F7ECED"
+  }
+]

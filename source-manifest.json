@@ -1,0 +1,492 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 228,
+    "sha256": "09fd0d22d5f378f2d58cbc05085ba1ab1d9dd79c1ef34151d3c29a14dc231abb"
+  },
+  {
+    "path": "build-msix.ps1",
+    "bytes": 4140,
+    "sha256": "10799074031408c2ef8b8a82d99c0a5b04df9f4277ddaf9c725bf726af971685"
+  },
+  {
+    "path": "build-native.ps1",
+    "bytes": 1115,
+    "sha256": "c0ffcbf3dbbd443588ee55de1b8d645fad44d29712b3a7a5de7fe2d23b5b05f8"
+  },
+  {
+    "path": "build-settings.ps1",
+    "bytes": 1016,
+    "sha256": "922f011bed6086670988885000066c5ea4575d89c847e31f22f460b65e3d51fb"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 1386,
+    "sha256": "f7f9b8c9d16c378839917fb9d7234a92a05c1f8ec285c9b7036b4f0dfa1d3665"
+  },
+  {
+    "path": "measure-preview.ps1",
+    "bytes": 1787,
+    "sha256": "2e6d5651d54e99988b1456859bc1432dc2802904ae39268da4b3fde81ee85b93"
+  },
+  {
+    "path": "NuGet.Config",
+    "bytes": 217,
+    "sha256": "273b854572fa29952ee1020f2103d3106692d3e68186f37364848afeb9200a6e"
+  },
+  {
+    "path": "packaging/AppxManifest.xml.template",
+    "bytes": 1787,
+    "sha256": "b90be1b74b2dbae21abe84bac9a4a4477a9ac287db94572ff4fd03ee823b171b"
+  },
+  {
+    "path": "packaging/assets/Square150x150Logo.png",
+    "bytes": 25743,
+    "sha256": "a6dbd0425ee28aa07bc49d7668dee68ff4b682d2af63d0d12defea0f5720b6fb"
+  },
+  {
+    "path": "packaging/assets/Square44x44Logo.png",
+    "bytes": 3694,
+    "sha256": "2386e644d6ed91932e29604048dd0e57e5b181dc8a9ee3e78bf490585e4b9ca9"
+  },
+  {
+    "path": "packaging/assets/StoreLogo.png",
+    "bytes": 4477,
+    "sha256": "2c19dc98193723b8e5beb07da0c47ad378d2ed8a1594f2a62c2a5756a9715fa3"
+  },
+  {
+    "path": "packaging/export-icons.py",
+    "bytes": 421,
+    "sha256": "6bb2efc5f578715501cdef6d63ed1f68892b8c802a490056d519d4457d63a156"
+  },
+  {
+    "path": "pid-codes/APPLICATION.md",
+    "bytes": 2686,
+    "sha256": "57be0abc8bf7ffb87645246b9ec56ab5c91977f0613f0535dae142041cd2ef27"
+  },
+  {
+    "path": "pid-codes/org-entry.md.template",
+    "bytes": 163,
+    "sha256": "e55d4a92c345e1f8dd7ddf19d9e4bbcc0d98cfa33fe667f659a64616fbb2fe1e"
+  },
+  {
+    "path": "pid-codes/pid-entry.md.template",
+    "bytes": 627,
+    "sha256": "e479484f3d406f29baa622c6f6057148d714f39ae6db510af46a9a6e144654cc"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3271,
+    "sha256": "11e55cf5363bc3baa225fb84a856fa60cf970122fa16d669ceb4cd8114acbd51"
+  },
+  {
+    "path": "source/App/CirDial.Settings/app.manifest",
+    "bytes": 808,
+    "sha256": "06a22955244cae31e240dd1505fa57fb8a62260a0d49a30195e822e1217a7231"
+  },
+  {
+    "path": "source/App/CirDial.Settings/App.xaml",
+    "bytes": 427,
+    "sha256": "b7c2a1814d8429d183d13421ce56f2d991c7aaa7d43c5376860d4204e4d29989"
+  },
+  {
+    "path": "source/App/CirDial.Settings/CirDial.Settings.csproj",
+    "bytes": 1566,
+    "sha256": "45287013cdfbf051b5de8aa2815b5a7b2da1b1dfc7101e8c905e1ae3243a38a7"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Directory.Build.props",
+    "bytes": 16,
+    "sha256": "06c671736121a0055beccfb8d791bb82c609489c21b4188227147d9d17b0dcb0"
+  },
+  {
+    "path": "source/App/CirDial.Settings/languages.json",
+    "bytes": 26016,
+    "sha256": "38c68b51a7cba437eef340637f8c317d9121080bcb4a3f2da86c041e62fff4a9"
+  },
+  {
+    "path": "source/App/CirDial.Settings/LicenseProbe.cs",
+    "bytes": 1616,
+    "sha256": "d5a1ffc987d8562c13dc692b87755bb388723c51b2f673ae9012e1d7eb67aff0"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/dependency-inventory.json",
+    "bytes": 6690,
+    "sha256": "06ea4fdce525463c4b5bf4c7bf95353e77bd451eb9455bcd6e214f5a9490cda1"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/dotnet-runtime-arm64-10.0.12/LICENSE.TXT",
+    "bytes": 1139,
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/dotnet-runtime-arm64-10.0.12/THIRD-PARTY-NOTICES.TXT",
+    "bytes": 78041,
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/dotnet-runtime-x64-10.0.12/LICENSE.TXT",
+    "bytes": 1139,
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/dotnet-runtime-x64-10.0.12/THIRD-PARTY-NOTICES.TXT",
+    "bytes": 78041,
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.Web.WebView2-1.0.3179.45/LICENSE.txt",
+    "bytes": 1487,
+    "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.Web.WebView2-1.0.3179.45/NOTICE.txt",
+    "bytes": 3894,
+    "sha256": "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.Windows.SDK.BuildTools.MSIX-1.7.20250829.1/NOTICE.txt",
+    "bytes": 2061,
+    "sha256": "f09ebf5de6a5c8e7ebc900bb2e52af2f75e13610a1cf91e1514530e448d956c3"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.Windows.SDK.BuildTools.MSIX-1.7.20250829.1/sdk_license.txt",
+    "bytes": 33483,
+    "sha256": "a7a5c7e7ff998558983d6aca2702117c328aeb0c6404d298cb275f5623c6fd13"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK-1.8.260921001/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK-1.8.260921001/NOTICE.txt",
+    "bytes": 2061,
+    "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.AI-1.8.79/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Base-1.8.251216001/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Base-1.8.251216001/NOTICE.txt",
+    "bytes": 2061,
+    "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.DWrite-1.8.25122902/license.txt",
+    "bytes": 12402,
+    "sha256": "f9ed00147604bdc48c7e62d127d73245781ce53903cef9c3863f8a7ef8120cc2"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Foundation-1.8.260803002/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.InteractiveExperiences-1.8.260708001/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.ML-1.8.2223/license.txt",
+    "bytes": 14033,
+    "sha256": "656aab74c15aa9f9964bcdcc993eb2755cbdb4822d5e0e3bc61d2e281897f758"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.ML-1.8.2223/ThirdPartyNotices.txt",
+    "bytes": 333022,
+    "sha256": "e00f828e0a33de591a355ae6606d2625f5758da7d2c844db7821c9dd3e3647b6"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Runtime-1.8.260921001/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Runtime-1.8.260921001/NOTICE.txt",
+    "bytes": 2061,
+    "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.Widgets-1.8.251231004/license.txt",
+    "bytes": 12402,
+    "sha256": "f9ed00147604bdc48c7e62d127d73245781ce53903cef9c3863f8a7ef8120cc2"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.WinUI-1.8.260803003/license.txt",
+    "bytes": 12637,
+    "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/Microsoft.WindowsAppSDK.WinUI-1.8.260803003/NOTICE.txt",
+    "bytes": 2061,
+    "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/System.Numerics.Tensors-9.0.0/LICENSE.TXT",
+    "bytes": 1139,
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/System.Numerics.Tensors-9.0.0/THIRD-PARTY-NOTICES.TXT",
+    "bytes": 75640,
+    "sha256": "40686c6447a7d5b5d3693068e4571b5f483d7ed335aeee773ef662440de4c5d5"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Licenses/THIRD-PARTY-NOTICES.md",
+    "bytes": 4350,
+    "sha256": "2238dbfdf17f8379e5ab04e11273a7fa84ec24f11e3e4de37385ef2e27fba5cf"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Locale.cs",
+    "bytes": 2201,
+    "sha256": "acd5a6409644ad67f48135ebaba638f195630317bffd6b38997843236d8a71b3"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Program.cs",
+    "bytes": 20976,
+    "sha256": "b50b5f7a586f5822a207d212e1d143d0e29a950763ddee9e0f80be4db31d5558"
+  },
+  {
+    "path": "source/App/CirDial.Settings/store-config.json",
+    "bytes": 282,
+    "sha256": "26afc9eb5e8c13bed178f9c8cfce739c64ceb7edffb57fbbb102c14fb34f6e6e"
+  },
+  {
+    "path": "source/App/CirDial.Settings/StoreGesture.cs",
+    "bytes": 2505,
+    "sha256": "f2be3c42f62124396b8d219ea429780ff57281622fcb3884fe7c05f0df5e016c"
+  },
+  {
+    "path": "source/App/CirDial.Settings/Theme.xaml",
+    "bytes": 230,
+    "sha256": "c99564de6cbbf282250a44b9f4ab4a859d1e80aebd75e82aee6e4034026b4155"
+  },
+  {
+    "path": "source/App/CirDial.Settings/VirtualDial.ico",
+    "bytes": 99111,
+    "sha256": "8f90f396d3ae69e98ddf430d5f9c42b0262cd86c3f5a79e689cf766981dcf805"
+  },
+  {
+    "path": "source/App/VirtualDial/DialBackend.cpp",
+    "bytes": 10264,
+    "sha256": "507535caaeb647b504454d0101b51a105337fd1a027551af8835c6ec0f9ddba8"
+  },
+  {
+    "path": "source/App/VirtualDial/DialBackend.h",
+    "bytes": 489,
+    "sha256": "315d5ad1f46ea47a7032c2b9efce637423f844b790c20b79ffc5f7115d94008f"
+  },
+  {
+    "path": "source/App/VirtualDial/DialMath.h",
+    "bytes": 1585,
+    "sha256": "4a3bc1e08488ae7c17e4270404d541de2cb20babae3c402eee878d3c92f8fe38"
+  },
+  {
+    "path": "source/App/VirtualDial/DialScheduler.h",
+    "bytes": 725,
+    "sha256": "c9f1d413a138debfbd895e1150d2fb7aaf50cede846ec4e7f2268ca79a2de704"
+  },
+  {
+    "path": "source/App/VirtualDial/DialVisual.h",
+    "bytes": 3281,
+    "sha256": "87ac875d0323531ebf72549134e59748b1b4c72434a39a212728be8b2170fd49"
+  },
+  {
+    "path": "source/App/VirtualDial/LicenseProbe.h",
+    "bytes": 4316,
+    "sha256": "b34614d9209a9991ead2d9dc6c7c0e8fa185388a7f200ede9eb7f40f51b9ee0c"
+  },
+  {
+    "path": "source/App/VirtualDial/RawTouch.h",
+    "bytes": 9257,
+    "sha256": "5ba36df2bb361efb147d6d2a79699b4de2a08ee9e9d229c8e53b8bbacf7c1c2c"
+  },
+  {
+    "path": "source/App/VirtualDial/Shake.h",
+    "bytes": 1016,
+    "sha256": "536cec3ff3280011ce95920ca8a6a4784fa4355e8555a4cb7463cb2b93e3ff81"
+  },
+  {
+    "path": "source/App/VirtualDial/TouchRelay.h",
+    "bytes": 4003,
+    "sha256": "92b06bcb3cc9d6b1f5f7337cfd9fc8c988178032d9aa6f9f9c36a8d3c7f0e3aa"
+  },
+  {
+    "path": "source/App/VirtualDial/TouchTap.h",
+    "bytes": 3547,
+    "sha256": "62ada898f2377ee80550ee9af4131a5b7cb77902b907c280af454e4db241c15d"
+  },
+  {
+    "path": "source/App/VirtualDial/TransportPins.h",
+    "bytes": 750,
+    "sha256": "e464c4da51efe1f1a054af29374b809c08e2787616f3a9eecf45019081a4c571"
+  },
+  {
+    "path": "source/App/VirtualDial/VirtualDial.cpp",
+    "bytes": 63395,
+    "sha256": "b0ecde795d30460d404860dabef85c141c16888da0065e01e8ffbf88822881af"
+  },
+  {
+    "path": "source/App/VirtualDial/VirtualDial.ico",
+    "bytes": 99111,
+    "sha256": "8f90f396d3ae69e98ddf430d5f9c42b0262cd86c3f5a79e689cf766981dcf805"
+  },
+  {
+    "path": "source/App/VirtualDial/VirtualDial.rc",
+    "bytes": 582,
+    "sha256": "6f605070894a152d2df8e4ea9d6ef9c1d9889e2f0a1d04d08330451af9f2e727"
+  },
+  {
+    "path": "source/App/VirtualDial/VirtualDial.svg",
+    "bytes": 277,
+    "sha256": "c5a9dd3df9704ab00be635cff1c84edbaa67d818d7c228fb7f0bb1f3c52f39ff"
+  },
+  {
+    "path": "source/App/VirtualDial/VirtualDial.vcxproj",
+    "bytes": 2751,
+    "sha256": "3f3e966650654bcc2f46ea8b33aea47e5495b9ed3e162dda234ee57ea5da9dd8"
+  },
+  {
+    "path": "source/build-usbip-poc.ps1",
+    "bytes": 1462,
+    "sha256": "32e377460f09f3acb4c8d7ac294f1739a5311e8b99a776fb829184537acbd051"
+  },
+  {
+    "path": "source/build.ps1",
+    "bytes": 1461,
+    "sha256": "d53572a05f9c32c2e04d4bf8f0a271c4f994000e1eedbbb655231fa92edff7fd"
+  },
+  {
+    "path": "source/Directory.Build.props",
+    "bytes": 740,
+    "sha256": "b4fb093da086d100d2f0d37865dc435b0af5b3a5298161415a17df76383b2200"
+  },
+  {
+    "path": "source/Driver/VirtualDialDriver/VirtualDialDriver.cpp",
+    "bytes": 7728,
+    "sha256": "ffd6d43da63bdedaae772b8f7a205a5da91bcd3a0b34c04401757a905133d01a"
+  },
+  {
+    "path": "source/Driver/VirtualDialDriver/VirtualDialDriver.inf",
+    "bytes": 1163,
+    "sha256": "6f81aa49686e948108f8061b2cc26fd3dc6fbf49a212ca6100c1ed37ebf91f82"
+  },
+  {
+    "path": "source/Driver/VirtualDialDriver/VirtualDialDriver.vcxproj",
+    "bytes": 2472,
+    "sha256": "4dc1d1d3f5a690716534ce22d763c4bb6e49b0dad5ecf1a0ab68e2fbd9d38c85"
+  },
+  {
+    "path": "source/packages.config",
+    "bytes": 565,
+    "sha256": "a965d060c2490b141914ad69cf7701b7d221a723671463e0c691f904d5aa4b27"
+  },
+  {
+    "path": "source/README.md",
+    "bytes": 78,
+    "sha256": "7e3500665f0d04d7a542e07f65a047069c4ad2fb58fa31464b4e65a922b67c9b"
+  },
+  {
+    "path": "source/Shared/VirtualDialProtocol.h",
+    "bytes": 1570,
+    "sha256": "3bcdb14e7957c4ebdee2707c1cc458c5abcb4495e1a7940b78357be9b8408cae"
+  },
+  {
+    "path": "source/Test/DialTest/DialTest.cpp",
+    "bytes": 8433,
+    "sha256": "91a8b15e66fcc2b9fdc324ef0f1bb6e6ac3b1d0cf778f818e9a12dc875b90a92"
+  },
+  {
+    "path": "source/Test/DialTest/DialTest.vcxproj",
+    "bytes": 2353,
+    "sha256": "84f3bc5069d1adccdf7b905cc3928f29f296974bed27a429c025dd9f8ee330a3"
+  },
+  {
+    "path": "source/Test/ExpectedVhfDescriptor.bin",
+    "bytes": 121,
+    "sha256": "672a5fbfc7d12c5509c958495ac91facac62a1cb506616bdc94a0851dcbd74ee"
+  },
+  {
+    "path": "source/Test/Get-UsbIpPocStatus.ps1",
+    "bytes": 3064,
+    "sha256": "939607e3d425de03c7f0cb2ab8e359b1422304dc9afdc2c78017747a6383c0f5"
+  },
+  {
+    "path": "source/Test/Run-UsbIpPoc.ps1",
+    "bytes": 5889,
+    "sha256": "7112a497c9264929fe1b4576c6b0ef386cdab276b3df9bacee2ce71caf091171"
+  },
+  {
+    "path": "source/Test/ScreenContactTest/ScreenContactTest.cpp",
+    "bytes": 8025,
+    "sha256": "79c9495c2017c6b21b8607764d64ddd38f7b5aaeb224d1b7de288b2d2fd16e99"
+  },
+  {
+    "path": "source/Test/ScreenContactTest/ScreenContactTest.vcxproj",
+    "bytes": 2274,
+    "sha256": "c3bf05999c111f5bc740823c49dec06a8d8fe753a8b53c1b5c99b63e41f0657c"
+  },
+  {
+    "path": "source/Test/Store-Release-Preflight.ps1",
+    "bytes": 1859,
+    "sha256": "70dbdc3321605c00d3e27254f13fa70f3da8400c31cf7a1822e3638c075a1f4b"
+  },
+  {
+    "path": "source/Test/transport-pins.json",
+    "bytes": 1746,
+    "sha256": "ad8eeb657dec3e7dfe489fd2af717da319e2b1dfc14f83406fc8ecdd7715db8c"
+  },
+  {
+    "path": "source/Test/Verify-UsbIpInstaller.ps1",
+    "bytes": 1067,
+    "sha256": "24b87a10f5313566c0e0501d0508dc370e366d17cdc3919e9e8cede515d61952"
+  },
+  {
+    "path": "source/Usb/CirDialUsbDeviceConfig.h",
+    "bytes": 485,
+    "sha256": "889ba818019c0a0b179af071d1de0e87a999733c307656d5a531143ea1abebd8"
+  },
+  {
+    "path": "source/Usb/UsbIpServer.cpp",
+    "bytes": 16369,
+    "sha256": "2cf77521f3c06cbaa01ca143509dc5229a2635bacddb8e0e32402479bdd4d371"
+  },
+  {
+    "path": "source/Usb/UsbIpServer.h",
+    "bytes": 698,
+    "sha256": "39ba091e029cd0fdc461239e4ba0b2240614c35a6c658bb9714afddb15a78707"
+  },
+  {
+    "path": "source/Usb/VirtualUsbDevice.cpp",
+    "bytes": 6790,
+    "sha256": "ae31e804eeb7a43918310b958c6ec0909379955cdf6595fa7e36f3f998c64c84"
+  },
+  {
+    "path": "source/Usb/VirtualUsbDevice.h",
+    "bytes": 1060,
+    "sha256": "32b9f991c0f5caf6e497a2f7316ee63188eff3b3399ba39d6b9a2d33d4ce4c3f"
+  },
+  {
+    "path": "source/VirtualDial.sln",
+    "bytes": 3611,
+    "sha256": "7e70b34662d74d27e55837f5fe58a75449a30ce59f2eec167f3cea8ae9fdddbd"
+  },
+  {
+    "path": "verify-build.ps1",
+    "bytes": 1129,
+    "sha256": "57eaa94c8d32f4485dfe4fe28861915279b960928cf1b7b070b87a340b72c9e7"
+  },
+  {
+    "path": "verify-license-probe.ps1",
+    "bytes": 1300,
+    "sha256": "7e9b80d6fffbcffd5ea44bf80c8d5d16bbe11d8c18cd300d16905a24dafdda83"
+  }
+]

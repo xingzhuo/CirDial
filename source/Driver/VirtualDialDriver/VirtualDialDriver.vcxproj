@@ -1,0 +1,17 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup Label="ProjectConfigurations">
+  <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  <ProjectConfiguration Include="Debug|ARM64"><Configuration>Debug</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+  <ProjectConfiguration Include="Release|ARM64"><Configuration>Release</Configuration><Platform>ARM64</Platform></ProjectConfiguration>
+ </ItemGroup>
+ <PropertyGroup Label="Globals"><ProjectGuid>{BE56384F-F5EB-432F-AC8A-02641C9A80EC}</ProjectGuid><Keyword>Win32Proj</Keyword><RootNamespace>VirtualDialDriver</RootNamespace><ProjectName>VirtualDialDriver</ProjectName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+ <PropertyGroup Label="Configuration"><ConfigurationType>Driver</ConfigurationType><DriverType>KMDF</DriverType><DriverTargetPlatform>Universal</DriverTargetPlatform><PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset><TargetVersion>Windows10</TargetVersion><Inf2CatUseLocalTime>true</Inf2CatUseLocalTime><SignMode Condition="'$(SignMode)'==''">Off</SignMode><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries><UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries></PropertyGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+ <ItemDefinitionGroup><ClCompile><AdditionalIncludeDirectories>$(ProjectDir)..\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PrecompiledHeader>NotUsing</PrecompiledHeader><LanguageStandard>stdcpp17</LanguageStandard><WarningLevel>Level4</WarningLevel></ClCompile><Link><AdditionalDependencies>vhfkm.lib;wdmsec.lib;%(AdditionalDependencies)</AdditionalDependencies></Link><Inf><TimeStamp>0.3.1.0</TimeStamp></Inf></ItemDefinitionGroup>
+ <ItemGroup><FilesToPackage Include="$(TargetPath)"/><ClCompile Include="VirtualDialDriver.cpp"/><Inf Include="VirtualDialDriver.inf"/><ClInclude Include="..\..\Shared\VirtualDialProtocol.h"/></ItemGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
+
+

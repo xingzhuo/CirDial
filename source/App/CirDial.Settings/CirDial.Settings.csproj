@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+  <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion><UseWinUI>true</UseWinUI>
+  <WindowsPackageType>None</WindowsPackageType><WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+  <SelfContained>true</SelfContained><Platforms>ARM64;x64</Platforms><RuntimeIdentifiers>win-arm64;win-x64</RuntimeIdentifiers>
+  <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  <ApplicationIcon>VirtualDial.ico</ApplicationIcon><ApplicationManifest>app.manifest</ApplicationManifest><NuGetAudit>false</NuGetAudit>
+  <ProjectPriFileName>resources.pri</ProjectPriFileName>
+  <DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+ </PropertyGroup>
+ <ItemGroup><PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260921001" /></ItemGroup>
+ <Target Name="PublishXamlResources" AfterTargets="Publish"><Copy SourceFiles="$(TargetDir)resources.pri" DestinationFolder="$(PublishDir)" /></Target>
+ <ItemGroup><Content Include="languages.json;store-config.json;VirtualDial.ico"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content><Content Include="Licenses\**\*"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content></ItemGroup>
+</Project>
+

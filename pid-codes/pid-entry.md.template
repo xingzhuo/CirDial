@@ -1,0 +1,15 @@
+---
+layout: pid
+title: CirDial Virtual USB Radial Controller
+owner: {{ORGANIZATION_SLUG}}
+license: MIT
+site: {{PUBLIC_REPOSITORY_URL}}
+source: {{PUBLIC_REPOSITORY_URL}}
+---
+
+CirDial implements a virtual USB HID System Multi-Axis Controller through a
+loopback USB/IP device server on Windows. The public source contains the USB
+interface implementation and descriptors, native dial UI, settings, shared
+protocol and tests. There is no physical PCB or hardware firmware. We request
+one stable identity for the same device implementation on ARM64 and x64,
+instead of requiring end users to register individual product identities.

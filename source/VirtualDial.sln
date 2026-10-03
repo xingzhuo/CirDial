@@ -1,0 +1,57 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "VirtualDialDriver", "Driver\VirtualDialDriver\VirtualDialDriver.vcxproj", "{BE56384F-F5EB-432F-AC8A-02641C9A80EC}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "DialTest", "Test\DialTest\DialTest.vcxproj", "{91C026DD-E2BC-4D65-9CB7-0ACB12D97746}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "VirtualDial", "App\VirtualDial\VirtualDial.vcxproj", "{2A3A4270-3ECC-4870-9014-761257170F02}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "ScreenContactTest", "Test\ScreenContactTest\ScreenContactTest.vcxproj", "{67FE3D7F-9489-41B7-91C2-50ABD599EC03}"
+EndProject
+Global
+ GlobalSection(SolutionConfigurationPlatforms) = preSolution
+  Debug|x64 = Debug|x64
+  Release|x64 = Release|x64
+  Debug|ARM64 = Debug|ARM64
+  Release|ARM64 = Release|ARM64
+ EndGlobalSection
+ GlobalSection(ProjectConfigurationPlatforms) = postSolution
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Debug|ARM64.ActiveCfg = Debug|ARM64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Debug|ARM64.Build.0 = Debug|ARM64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Debug|x64.ActiveCfg = Debug|x64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Debug|x64.Build.0 = Debug|x64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Release|ARM64.ActiveCfg = Release|ARM64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Release|ARM64.Build.0 = Release|ARM64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Release|x64.ActiveCfg = Release|x64
+  {67FE3D7F-9489-41B7-91C2-50ABD599EC03}.Release|x64.Build.0 = Release|x64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Debug|ARM64.ActiveCfg = Debug|ARM64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Debug|ARM64.Build.0 = Debug|ARM64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Debug|x64.ActiveCfg = Debug|x64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Debug|x64.Build.0 = Debug|x64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Release|ARM64.ActiveCfg = Release|ARM64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Release|ARM64.Build.0 = Release|ARM64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Release|x64.ActiveCfg = Release|x64
+  {2A3A4270-3ECC-4870-9014-761257170F02}.Release|x64.Build.0 = Release|x64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Debug|x64.ActiveCfg = Debug|x64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Debug|x64.Build.0 = Debug|x64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Release|x64.ActiveCfg = Release|x64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Release|x64.Build.0 = Release|x64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Debug|ARM64.ActiveCfg = Debug|ARM64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Debug|ARM64.Build.0 = Debug|ARM64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Release|ARM64.ActiveCfg = Release|ARM64
+  {BE56384F-F5EB-432F-AC8A-02641C9A80EC}.Release|ARM64.Build.0 = Release|ARM64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Debug|x64.ActiveCfg = Debug|x64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Debug|x64.Build.0 = Debug|x64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Release|x64.ActiveCfg = Release|x64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Release|x64.Build.0 = Release|x64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Debug|ARM64.ActiveCfg = Debug|ARM64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Debug|ARM64.Build.0 = Debug|ARM64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Release|ARM64.ActiveCfg = Release|ARM64
+  {91C026DD-E2BC-4D65-9CB7-0ACB12D97746}.Release|ARM64.Build.0 = Release|ARM64
+ EndGlobalSection
+EndGlobal
+
+
+

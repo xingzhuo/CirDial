@@ -1,0 +1,183 @@
+[
+  {
+    "package": "Microsoft.Web.WebView2/1.0.3179.45",
+    "declared_license": "LICENSE.txt",
+    "documents": [
+      {
+        "path": "Microsoft.Web.WebView2-1.0.3179.45/LICENSE.txt",
+        "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+      },
+      {
+        "path": "Microsoft.Web.WebView2-1.0.3179.45/NOTICE.txt",
+        "sha256": "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.Windows.SDK.BuildTools/10.0.26100.4654",
+    "declared_license": "See accompanying terms",
+    "documents": [],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.Windows.SDK.BuildTools.MSIX/1.7.20250829.1",
+    "declared_license": "sdk_license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.Windows.SDK.BuildTools.MSIX-1.7.20250829.1/NOTICE.txt",
+        "sha256": "f09ebf5de6a5c8e7ebc900bb2e52af2f75e13610a1cf91e1514530e448d956c3"
+      },
+      {
+        "path": "Microsoft.Windows.SDK.BuildTools.MSIX-1.7.20250829.1/sdk_license.txt",
+        "sha256": "a7a5c7e7ff998558983d6aca2702117c328aeb0c6404d298cb275f5623c6fd13"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK/1.8.260921001",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK-1.8.260921001/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      },
+      {
+        "path": "Microsoft.WindowsAppSDK-1.8.260921001/NOTICE.txt",
+        "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.AI/1.8.79",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.AI-1.8.79/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.Base/1.8.251216001",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.Base-1.8.251216001/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      },
+      {
+        "path": "Microsoft.WindowsAppSDK.Base-1.8.251216001/NOTICE.txt",
+        "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.DWrite/1.8.25122902",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.DWrite-1.8.25122902/license.txt",
+        "sha256": "f9ed00147604bdc48c7e62d127d73245781ce53903cef9c3863f8a7ef8120cc2"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.Foundation/1.8.260803002",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.Foundation-1.8.260803002/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.InteractiveExperiences/1.8.260708001",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.InteractiveExperiences-1.8.260708001/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.ML/1.8.2223",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.ML-1.8.2223/license.txt",
+        "sha256": "656aab74c15aa9f9964bcdcc993eb2755cbdb4822d5e0e3bc61d2e281897f758"
+      },
+      {
+        "path": "Microsoft.WindowsAppSDK.ML-1.8.2223/ThirdPartyNotices.txt",
+        "sha256": "e00f828e0a33de591a355ae6606d2625f5758da7d2c844db7821c9dd3e3647b6"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.Runtime/1.8.260921001",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.Runtime-1.8.260921001/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      },
+      {
+        "path": "Microsoft.WindowsAppSDK.Runtime-1.8.260921001/NOTICE.txt",
+        "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.Widgets/1.8.251231004",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.Widgets-1.8.251231004/license.txt",
+        "sha256": "f9ed00147604bdc48c7e62d127d73245781ce53903cef9c3863f8a7ef8120cc2"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "Microsoft.WindowsAppSDK.WinUI/1.8.260803003",
+    "declared_license": "license.txt",
+    "documents": [
+      {
+        "path": "Microsoft.WindowsAppSDK.WinUI-1.8.260803003/license.txt",
+        "sha256": "5b11e6347756e40fe0274bc08c97f89201b94f0d50181a09a00f1f4740840501"
+      },
+      {
+        "path": "Microsoft.WindowsAppSDK.WinUI-1.8.260803003/NOTICE.txt",
+        "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  },
+  {
+    "package": "System.Numerics.Tensors/9.0.0",
+    "declared_license": "MIT",
+    "documents": [
+      {
+        "path": "System.Numerics.Tensors-9.0.0/LICENSE.TXT",
+        "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+      },
+      {
+        "path": "System.Numerics.Tensors-9.0.0/THIRD-PARTY-NOTICES.TXT",
+        "sha256": "40686c6447a7d5b5d3693068e4571b5f483d7ed335aeee773ef662440de4c5d5"
+      }
+    ],
+    "scope": "resolved dependency (includes build-time packages)"
+  }
+]

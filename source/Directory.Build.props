@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <CirDialWdkVersion>10.0.28000.2526</CirDialWdkVersion>
+    <CirDialSdkVersion>10.0.28000.1721</CirDialSdkVersion>
+    <CirDialPackages Condition="'$(CirDialPackages)'==''">$(MSBuildThisFileDirectory)packages\</CirDialPackages>
+  </PropertyGroup>
+  <Import Project="$(CirDialPackages)Microsoft.Windows.WDK.$(Platform).$(CirDialWdkVersion)\build\native\Microsoft.Windows.WDK.$(Platform).props" />
+  <Import Project="$(CirDialPackages)Microsoft.Windows.SDK.cpp.$(Platform).$(CirDialSdkVersion)\build\native\Microsoft.Windows.SDK.cpp.$(Platform).props" />
+  <Import Project="$(CirDialPackages)Microsoft.Windows.SDK.cpp.$(CirDialSdkVersion)\build\native\Microsoft.Windows.SDK.cpp.props" />
+</Project>
+

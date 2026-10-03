@@ -1,0 +1,8 @@
+{
+  "AppStoreId": "",
+  "OfferToken": "cirdial.gesture",
+  "IntendedPurchaseType": "Durable one-time purchase",
+  "GestureProductStoreId": "",
+  "PlannedChinaPriceCNY": 9.9,
+  "PriceSource": "Display StoreProduct.Price.FormattedPrice at runtime; publisher target CNY 9.90"
+}
