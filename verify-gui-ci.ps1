@@ -57,8 +57,7 @@ function Confirm-Png {
         return $null
     }
     $bytes = [IO.File]::ReadAllBytes($File)
-    $signature = [byte[]](137, 80, 78, 71, 13, 10, 26, 10)
-    if ($bytes.Length -lt 100 -or -not [Linq.Enumerable]::SequenceEqual([byte[]]$bytes[0..7], $signature)) {
+    if ($bytes.Length -lt 100 -or [BitConverter]::ToString($bytes, 0, 8) -ne '89-50-4E-47-0D-0A-1A-0A') {
         $issues.Add("Invalid PNG ($Name): $File")
         return $null
     }
@@ -70,7 +69,7 @@ function Confirm-Png {
         return $null
     }
     return [pscustomobject]@{
-        File = $File.Substring($root.Length).TrimStart('\\', '/')
+        File = [IO.Path]::GetFileName($File)
         Width = $width
         Height = $height
         Bytes = $bytes.Length
