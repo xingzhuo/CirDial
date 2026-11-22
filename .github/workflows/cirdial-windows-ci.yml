@@ -75,9 +75,17 @@ jobs:
         env:
           TARGET_PLATFORM: ${{ matrix.platform }}
         run: |
-          $exe = "./build/$env:TARGET_PLATFORM/VirtualDial.exe"
-          & $exe --self-test
-          if ($LASTEXITCODE -ne 0) { throw "Native self-test failed with exit code $LASTEXITCODE" }
+          $exe = Join-Path (Get-Location) "build/$env:TARGET_PLATFORM/VirtualDial.exe"
+          $process = Start-Process -FilePath $exe -ArgumentList '--self-test' -PassThru
+          if (-not $process.WaitForExit(30000)) {
+            Stop-Process -Id $process.Id -Force -ErrorAction SilentlyContinue
+            throw 'Native self-test timed out after 30 seconds'
+          }
+          $process.Refresh()
+          $exitCode = $process.ExitCode
+          $report = @{ platform = $env:TARGET_PLATFORM; test = '--self-test'; exitCode = $exitCode }
+          $report | ConvertTo-Json | Set-Content "build/$env:TARGET_PLATFORM/self-test-validation.json"
+          if ($exitCode -ne 0) { throw "Native self-test failed with exit code $exitCode" }
 
       - name: Headless Store license-denial probe
         env:
@@ -92,6 +100,7 @@ jobs:
         with:
           name: cirdial-${{ matrix.platform }}-ci-results
           path: |
+            build/${{ matrix.platform }}/self-test-validation.json
             build/${{ matrix.platform }}/validation.json
             build/${{ matrix.platform }}/license-probe-validation.json
             source/build-logs/**/*.log
