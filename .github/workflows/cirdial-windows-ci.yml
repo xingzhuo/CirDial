@@ -1,0 +1,99 @@
+name: CirDial Windows CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and check (${{ matrix.platform }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: x64
+            runner: windows-2025
+          - platform: ARM64
+            runner: windows-11-arm
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Install .NET 10 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install NuGet CLI
+        uses: NuGet/setup-nuget@v2
+        with:
+          nuget-version: 6.x
+
+      - name: Show build tool versions
+        run: |
+          dotnet --info
+          nuget help | Select-Object -First 6
+          $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio/Installer/vswhere.exe'
+          if (!(Test-Path $vswhere)) { throw 'vswhere.exe not found' }
+          & $vswhere -latest -products * -property installationPath
+
+      - name: Restore pinned native SDK and WDK packages
+        run: |
+          nuget restore ./source/packages.config -PackagesDirectory ./source/packages -NonInteractive -Source https://api.nuget.org/v3/index.json
+          if ($LASTEXITCODE -ne 0) { throw "NuGet restore failed with exit code $LASTEXITCODE" }
+
+      - name: Build native Win32 app
+        env:
+          TARGET_PLATFORM: ${{ matrix.platform }}
+        run: |
+          & ./build-native.ps1 -Platform $env:TARGET_PLATFORM
+          if ($LASTEXITCODE -ne 0) { throw "Native build failed with exit code $LASTEXITCODE" }
+          $path = "build/$env:TARGET_PLATFORM/VirtualDial.exe"
+          if (!(Test-Path $path)) { throw "Native executable missing: $path" }
+
+      - name: Publish WinUI settings app
+        env:
+          TARGET_PLATFORM: ${{ matrix.platform }}
+        run: |
+          & ./build-settings.ps1 -Platform $env:TARGET_PLATFORM
+          if ($LASTEXITCODE -ne 0) { throw "Settings publish failed with exit code $LASTEXITCODE" }
+          $path = "build/$env:TARGET_PLATFORM/Settings/CirDial.Settings.exe"
+          if (!(Test-Path $path)) { throw "Settings executable missing: $path" }
+
+      - name: Native protocol and math self-test
+        env:
+          TARGET_PLATFORM: ${{ matrix.platform }}
+        run: |
+          $exe = "./build/$env:TARGET_PLATFORM/VirtualDial.exe"
+          & $exe --self-test
+          if ($LASTEXITCODE -ne 0) { throw "Native self-test failed with exit code $LASTEXITCODE" }
+
+      - name: Headless Store license-denial probe
+        env:
+          TARGET_PLATFORM: ${{ matrix.platform }}
+        run: |
+          & ./verify-license-probe.ps1 -Platform $env:TARGET_PLATFORM
+          if ($LASTEXITCODE -ne 0) { throw "License probe failed with exit code $LASTEXITCODE" }
+
+      - name: Upload verification and diagnostic results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cirdial-${{ matrix.platform }}-ci-results
+          path: |
+            build/${{ matrix.platform }}/validation.json
+            build/${{ matrix.platform }}/license-probe-validation.json
+            source/build-logs/**/*.log
+          if-no-files-found: ignore
+          retention-days: 7
