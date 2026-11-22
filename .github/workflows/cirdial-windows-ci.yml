@@ -98,6 +98,12 @@ jobs:
             throw 'License probe did not produce its validation report'
           }
 
+      - name: GUI smoke checks and rendered screenshots
+        env:
+          TARGET_PLATFORM: ${{ matrix.platform }}
+        run: |
+          & ./verify-gui-ci.ps1 -Platform $env:TARGET_PLATFORM
+
       - name: Upload verification and diagnostic results
         if: always()
         uses: actions/upload-artifact@v4
@@ -107,6 +113,10 @@ jobs:
             build/${{ matrix.platform }}/self-test-validation.json
             build/${{ matrix.platform }}/validation.json
             build/${{ matrix.platform }}/license-probe-validation.json
+            build/${{ matrix.platform }}/gui-validation.json
+            build/${{ matrix.platform }}/Visuals/*.png
+            build/${{ matrix.platform }}/Settings/Settings-preview.png
+            build/${{ matrix.platform }}/gui-diagnostics/**
             source/build-logs/**/*.log
           if-no-files-found: ignore
           retention-days: 7
