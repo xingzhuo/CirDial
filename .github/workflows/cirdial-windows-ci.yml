@@ -91,8 +91,12 @@ jobs:
         env:
           TARGET_PLATFORM: ${{ matrix.platform }}
         run: |
+          # The script throws on failure; $LASTEXITCODE is not reliable here because
+          # the script can complete without launching a new native executable.
           & ./verify-license-probe.ps1 -Platform $env:TARGET_PLATFORM
-          if ($LASTEXITCODE -ne 0) { throw "License probe failed with exit code $LASTEXITCODE" }
+          if (-not (Test-Path "build/$env:TARGET_PLATFORM/license-probe-validation.json")) {
+            throw 'License probe did not produce its validation report'
+          }
 
       - name: Upload verification and diagnostic results
         if: always()
